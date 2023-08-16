@@ -41,47 +41,45 @@ const Wrapper = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  margin: 0 1rem;
   .filter {
     display: flex;
     align-items: center;
-    margin: 0 1vw;
+    margin: 0 0.0625rem;
 
     p {
       color: #a5b9d4;
+      font-size: 1.3rem;
     }
     ul {
       display: flex;
-      margin: 0;
-      padding: 0;
     }
     li {
       list-style: none;
-      margin: 0 2vw;
+      margin: 0 1.2rem;
       font-weight: bold;
       cursor: pointer;
-      font-size: 3vh;
+      font-size: 1.5rem;
     }
   }
 
   .wrap-product {
-    font-size: 2vh;
     display: flex;
     align-items: center;
 
     button {
       display: flex;
       align-items: center;
-      border-right: 2px solid black;
+      border-right: 0.125rem solid black;
       border-top: none;
       border-bottom: none;
-      padding: 1vw;
+      padding: 0.625rem;
       p {
-        font-size: 2vh;
-        margin-left: 1vw;
+        font-size: 1rem;
+        margin-left: 0.625rem;
       }
       span {
-        font-size: 2vh;
+        font-size: 1rem;
       }
     }
 
@@ -90,53 +88,9 @@ const Wrapper = styled.nav`
       align-items: center;
 
       span {
-        padding: 1.5vw;
-        font-size: 2vh;
+        padding: 0.9375rem;
+        font-size: 1.2rem;
       }
-    }
-  }
-
-  @media (max-width: 800px) {
-    .filter li {
-      font-size: 25px;
-      margin: 0 2vw;
-    }
-    .wrap-product button p {
-      font-size: 20px;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .filter li {
-      font-size: 15px;
-    }
-
-    .wrap-product button p {
-      font-size: 15px;
-    }
-  }
-
-  @media (max-width: 460px) {
-    .filter p {
-      font-size: 10px;
-    }
-    .filter li {
-      font-size: 12px;
-    }
-    .wrap-product button p {
-      font-size: 10px;
-    }
-  }
-
-  @media (max-width: 460px) {
-    .filter li {
-      font-size: 10px;
-    }
-    .wrap-product button p {
-      font-size: 8px;
-    }
-    .filter p {
-      font-size: 6px;
     }
   }
 `;

@@ -7,9 +7,9 @@ const CarouselWrapper = styled.div`
 `;
 
 const CarouselImage = styled.img`
-  width: 100%;
-  min-height: 15vh;
+  width: 100vw;
   height: auto;
+  min-height: 15vh;
 `;
 
 const ImageCarousel = () => {

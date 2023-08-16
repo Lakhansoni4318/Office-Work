@@ -2,20 +2,19 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 import Popup from "./Popup";
 import axios from "axios";
-
+import { ProductData } from "../../Product_data";
 const Product = () => {
   const [products, setProducts] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   useEffect(() => {
-    // Fetch product data from the API using Axios
     axios
       .get("http://localhost:3000/api/products")
       .then((response) => {
         setProducts(response.data);
       })
-      .catch((error) => {
-        console.error("Error fetching product data:", error);
+      .catch(() => {
+        setProducts(ProductData);
       });
   }, []);
 
@@ -58,48 +57,35 @@ const Wrapper = styled.div`
   justify-content: center;
 
   .product {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 10px;
+    border: 0.0625rem solid #ccc;
+    padding: 1.25rem;
+    margin: 0.625rem;
     display: flex;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.1);
   }
 
   .product-image img {
-    width: 150px;
-    height: 150px;
+    width: 9.375rem;
+    height: 9.375rem;
   }
 
   .product-details {
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 0.625rem;
+    margin-left: 1.25rem;
     p {
       font-size: 1.2rem;
-      margin-top: 5px;
+      margin-top: 0.3125rem;
     }
 
     .btn {
-      margin-top: 20px;
+      margin-top: 1.25rem;
       button {
         background-color: #57bb63;
         color: white;
         border: none;
-        padding: 10px;
+        padding: 0.625rem;
         cursor: pointer;
-      }
-    }
-  }
-
-  @media (max-width: 450px) {
-    .product {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .product-details {
-        font-size: 2vh;
-        width: 80%;
+        font-size: 1.2rem;
       }
     }
   }

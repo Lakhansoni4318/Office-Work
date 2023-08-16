@@ -22,7 +22,7 @@ const ShowClose = () => {
 
 const Wrapper = styled.div`
   background-color: #2f2f2f;
-  padding: 15px;
+  padding: 0.9375rem;
   color: white;
   font-size: 1.2rem;
   display: flex;
@@ -31,13 +31,8 @@ const Wrapper = styled.div`
 
   span {
     background-color: white;
-    padding: 5px;
+    padding: 0.3125rem;
     cursor: pointer;
-  }
-  @media (max-width: 640px) {
-    p {
-      font-size: 0.8rem;
-    }
   }
 `;
 

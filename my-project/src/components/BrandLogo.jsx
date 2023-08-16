@@ -14,15 +14,9 @@ const BrandLogo = () => {
 };
 
 const Wrapper = styled.div`
-  padding: 20px;
+  padding: 1.25rem;
   img {
-    height: 10vh;
-  }
-
-  @media (max-width: 460px) {
-    img {
-      height: 6vh;
-    }
+    height: 5rem;
   }
 `;
 

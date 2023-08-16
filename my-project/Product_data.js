@@ -1,4 +1,4 @@
-export const Products = [
+export const ProductData = [
   {
     title: "iPhone 9",
     description: "An apple mobile which is nothing like apple",
